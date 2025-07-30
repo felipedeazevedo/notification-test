@@ -1,4 +1,8 @@
 package com.felipe.notificationtest.dto;
 
-public class NotificationSummaryResponse {
-}
+public record NotificationSummaryResponse(
+        int totalRecipients,
+        int totalAttempts,
+        int successCount,
+        int failureCount
+) {}
