@@ -1,18 +1,11 @@
-CREATE TABLE user (
-      id BIGINT PRIMARY KEY,
-      name VARCHAR(100) NOT NULL,
-      email VARCHAR(255) NOT NULL,
-      phone VARCHAR(20) NOT NULL
-);
+INSERT INTO app_user (id, name, email, phone) VALUES
+    (1, 'Alice', 'alice@mail.com', '11111111'),
+    (2, 'Bob', 'bob@mail.com', '22222222');
 
-CREATE TABLE user_subscribed_categories (
-        user_id BIGINT NOT NULL,
-        subscribed_categories VARCHAR(50),
-        FOREIGN KEY (user_id) REFERENCES user(id)
-);
+INSERT INTO user_subscribed_categories (user_id, subscribed_categories) VALUES
+    (1, 'SPORTS'), (1, 'FINANCE'),
+    (2, 'MOVIES');
 
-CREATE TABLE user_preferred_channels (
-         user_id BIGINT NOT NULL,
-         preferred_channels VARCHAR(50),
-         FOREIGN KEY (user_id) REFERENCES user(id)
-);
+INSERT INTO user_preferred_channels (user_id, preferred_channels) VALUES
+    (1, 'EMAIL'), (1, 'SMS'),
+    (2, 'PUSH_NOTIFICATION');
