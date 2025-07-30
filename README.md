@@ -88,6 +88,8 @@ Once the application is running, Swagger UI is available at:
 http://localhost:8080/swagger-ui.html
 ```
 
+![img.png](img.png)
+
 ---
 
 ## Tests
@@ -100,6 +102,8 @@ Run unit and integration tests with:
 ## Mutation Testing
 
 Mutation tests are included using [PITEST](https://pitest.org/).
+
+![img_1.png](img_1.png)
 
 ### Run tests:
 ```bash
